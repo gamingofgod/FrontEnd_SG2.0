@@ -1,0 +1,37 @@
+@keyframes jumpAnimation {
+  0% {
+    transform: translateX(0) translateY(0) scale(1);
+  }
+  25% {
+    transform: translateX(-10px) translateY(-20px) scale(1.2);
+  }
+  50% {
+    transform: translateX(0) translateY(0) scale(0.8);
+  }
+  75% {
+    transform: translateX(10px) translateY(-20px) scale(1.2);
+  }
+  100% {
+    transform: translateX(0) translateY(0) scale(1);
+  }
+}
+.animate-grow {
+  position: relative;
+  animation: grow 2s ease-in-out;
+  transform-origin: center center;
+}
+
+@keyframes grow {
+  0% {
+      transform: scale(1);
+      top: 0;
+  }
+  50% {
+      transform: scale(1.5);
+      top: -20px; /* Ajusta aquí la cantidad que deseas que suba */
+  }
+  100% {
+      transform: scale(1);
+      top: 0;
+  }
+}
